@@ -1,1 +1,1 @@
-print(input())
+print(lower(input()))
