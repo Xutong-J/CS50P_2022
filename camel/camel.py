@@ -1,6 +1,4 @@
 
-string = input()
-print(camel_to_snake(string))
 
 
 def camel_to_snake(camel_str):
@@ -18,3 +16,5 @@ def camel_to_snake(camel_str):
     return ''.join(result)
 
 
+string = input()
+print(camel_to_snake(string))
