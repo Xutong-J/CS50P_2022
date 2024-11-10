@@ -16,5 +16,5 @@ def camel_to_snake(camel_str):
     return ''.join(result)
 
 
-string = input()
-print(camel_to_snake(string))
+string = input("camelCase: ")
+print("snake_case: ",camel_to_snake(string))
