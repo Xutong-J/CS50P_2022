@@ -1,7 +1,20 @@
-# invert camel case to snake case
-def main():
-    camelCase=input()
-    for i in len(camelCase):
-        if i in [A,Z]:
-            print(i)
-main()
+
+string = input()
+print(camel_to_snake(string))
+
+
+def camel_to_snake(camel_str):
+    result = []
+
+    for char in camel_str:
+        if char.isupper():
+            # 如果是大写字母，转换为小写并在前面加下划线
+            if result:
+                result.append('_')
+            result.append(char.lower())
+        else:
+            result.append(char)
+
+    return ''.join(result)
+
+
