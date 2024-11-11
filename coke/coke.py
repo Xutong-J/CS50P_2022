@@ -12,7 +12,8 @@ while receive < price:
             receive += coin
         else:
             print("Change Owed: ", receive - price)
-            coin = input("Insert Coin: ")
+            break
     else:
         print("Amount Due: ", price - receive)
+        coin = input("Insert Coin: ")
 
