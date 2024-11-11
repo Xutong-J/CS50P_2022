@@ -5,4 +5,4 @@ Nutri={
 }
 fruit=input("Item:")
 if fruit in Nutri:
-    print("Calories:",Nutri{fruit})
+    print("Calories:",Nutri(fruit))
