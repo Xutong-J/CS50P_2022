@@ -11,9 +11,9 @@ while True:
             coin = int(input("Insert Coin: "))
             receive += coin
         else:
-            print("Change Owed: ", receive - price)
+
             break
-    else:
+    else:            print("Change Owed: ", receive - price)
         print("Amount Due: ", price - receive)
         coin = int(input("Insert Coin: "))
 
