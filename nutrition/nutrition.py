@@ -22,4 +22,4 @@ Nutri={
 }
 fruit=input("Item:")
 if fruit.lower() in Nutri:
-    print("Calories:",Nutri[fruit])
+    print("Calories:",Nutri[fruit.lower()])
