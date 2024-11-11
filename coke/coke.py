@@ -1,6 +1,11 @@
 receive = 0
-coin = input("Insert Coin: ")
 price = 50
+print("Amount Due: ", price)
+coin = input("Insert Coin: ")
+
 receive += coin
 if price > receive:
     print("Insert Coin: ", price-receive)
+    coin = input("Insert Coin: ")
+    receive += coin
+    
