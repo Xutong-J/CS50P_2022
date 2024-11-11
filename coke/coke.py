@@ -2,12 +2,11 @@ receive = 0
 price = 50
 print("Amount Due: ", price)
 coin = int(input("Insert Coin: "))
-
+receive += coin
 while True:
     if coin in [25,10,5]:
         if price > receive:
-            receive += coin
-            print("Amount Due: ", price-receive)
+             print("Amount Due: ", price-receive)
             coin = int(input("Insert Coin: "))
             receive = receive + coin
             print(receive)
@@ -15,6 +14,7 @@ while True:
             print("Change Owed: ", receive-price,1)
             break
     else:
+        receive -= coin
         print("Amount Due: ", price - receive)
         coin = int(input("Insert Coin: "))
 
