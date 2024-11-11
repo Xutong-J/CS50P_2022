@@ -1,6 +1,4 @@
 
-
-
 def camel_to_snake(camel_str):
     result = []
 
