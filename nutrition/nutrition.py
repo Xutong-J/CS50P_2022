@@ -4,5 +4,5 @@ Nutri={
     "Sweet Cherries":100
 }
 fruit=input("Item:")
-if fruit in Nutri:
+if fruit.capitalize() in Nutri:
     print("Calories:",Nutri[fruit])
