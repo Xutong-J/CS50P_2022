@@ -1,1 +1,3 @@
-coin = input("")
+coin = input("Amount Due: ")
+price = 50
+
