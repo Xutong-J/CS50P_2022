@@ -6,7 +6,7 @@ receive += coin
 while True:
     if coin in [25,10,5]:
         if price > receive:
-             print("Amount Due: ", price-receive)
+            print("Amount Due: ", price-receive)
             coin = int(input("Insert Coin: "))
             receive = receive + coin
             print(receive)
