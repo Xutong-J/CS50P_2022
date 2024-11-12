@@ -27,6 +27,7 @@ while True:
                 n+1
                 if i == m:
                     break
+            m = n
             print(f"{y:04}-{int(m):02}-{int(d):02}")
             break
         else:
