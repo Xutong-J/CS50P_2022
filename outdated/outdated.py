@@ -18,6 +18,17 @@ while True:
         m, d, y = date.split('/')
         print(f"{y:04}-{int(m):02}-{int(d):02}")
         break
-    if
+    elif ',' in date:
+        md, y = date.split(', ')
+        m, d = md.split(' ')
+        n=0
+        for i in month:
+            n+1
+            if i == m:
+                break
+        print(f"{y:04}-{int(m):02}-{int(d):02}")
+        break
+    else:
+
 
 
