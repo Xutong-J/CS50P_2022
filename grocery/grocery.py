@@ -1,6 +1,6 @@
 grcry = {}
 try:
     item = input()
-    grcry[item] = 
+    grcry[item] = None
 except EOFError:
     ...
