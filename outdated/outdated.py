@@ -1,8 +1,9 @@
 def check_print(y, m, d):
     if int(d) <= 31:
         print(f"{y:04}-{int(m):02}-{int(d):02}")
+        return True
     else:
-        pass
+        return False
 
 month = [
     "January",
@@ -22,8 +23,10 @@ while True:
     date = input("Date:")
     if '/' in date:
         m, d, y = date.split('/')
-        check_print(y, m, d)
-        break
+        if check_print(y, m, d):
+            break
+        else:
+            pass
     elif ',' in date:
         md, y = date.split(', ')
         m, d = md.split(' ')
@@ -34,8 +37,10 @@ while True:
                 if i == m:
                     break
             m = n
-            check_print(y, m, d)
-            break
+            if check_print(y, m, d):
+                break
+            else:
+                pass
         else:
             pass
 
