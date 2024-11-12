@@ -10,5 +10,5 @@ while True:
         items = sorted(grcry)
         for i in items:
             print(grcry[i.upper()],i)
-            break
+        break
 
