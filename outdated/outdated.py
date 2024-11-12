@@ -1,5 +1,5 @@
 def check_print(y, m, d):
-    if int(d) <= 31:
+    if int(d) <= 31 and int(y) <= 12:
         print(f"{y:04}-{int(m):02}-{int(d):02}")
         return True
     else:
