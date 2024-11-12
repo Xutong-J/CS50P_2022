@@ -1,4 +1,5 @@
 def check_print(y, m, d):
+    y.strip()
     if int(d) <= 31 and int(m) <= 12:
         print(f"{y:04}-{int(m):02}-{int(d):02}")
         return True
@@ -23,7 +24,6 @@ while True:
     date = input("Date:")
     if '/' in date:
         m, d, y = date.split('/')
-        m.strip()
         if check_print(y, m, d):
             break
         else:
