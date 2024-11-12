@@ -24,7 +24,7 @@ while True:
         if m in month:
             n=0
             for i in month:
-                n+1
+                n += 1
                 if i == m:
                     break
             m = n
