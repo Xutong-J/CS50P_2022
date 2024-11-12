@@ -23,31 +23,34 @@ month = [
     "December"
 ]
 while True:
-    date = input("Date:")
-    if '/' in date:
-        m, d, y = date.split('/')
-        if check_print(y, m, d):
-            break
-        else:
-            pass
-    elif ',' in date:
-        md, y = date.split(', ')
-        m, d = md.split(' ')
-        if m in month:
-            n=0
-            for i in month:
-                n += 1
-                if i == m:
-                    break
-            m = n
-            n = 0
-            if check_print(y, str(m), d):
+    try:
+        date = input("Date:")
+        if '/' in date:
+            m, d, y = date.split('/')
+            if check_print(y, m, d):
                 break
             else:
                 pass
+        elif ',' in date:
+            md, y = date.split(', ')
+            m, d = md.split(' ')
+            if m in month:
+                n=0
+                for i in month:
+                    n += 1
+                    if i == m:
+                        break
+                m = n
+                n = 0
+                if check_print(y, str(m), d):
+                    break
+                else:
+                    pass
+            else:
+                pass
+
         else:
             pass
-
-    else:
+    except ValueError:
         pass
 
