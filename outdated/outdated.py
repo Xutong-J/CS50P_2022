@@ -37,6 +37,7 @@ while True:
                 if i == m:
                     break
             m = n
+            n = 0
             if check_print(y, m, d):
                 break
             else:
