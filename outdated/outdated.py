@@ -23,6 +23,7 @@ while True:
     date = input("Date:")
     if '/' in date:
         m, d, y = date.split('/')
+        m.strip()
         if check_print(y, m, d):
             break
         else:
