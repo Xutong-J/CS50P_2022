@@ -2,8 +2,12 @@ grcry = {}
 while True:
     try:
         item = input()
-        grcry[item.upper()] = grcry
+        if item.upper() in grcry:
+            grcry[item.upper()] = grcry[item.upper()]+1
+        else:
+            grcry[item.upper()] = 1
     except EOFError:
-        for i in sorted(grcry):
-            print(i)
+        items = sorted(grcry)
+        for i in items:
+            print(grcry[i.upper()],i)
 
