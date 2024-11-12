@@ -1,5 +1,7 @@
 def check_print(y, m, d):
-    y.strip()
+    y=y.strip()
+    m=m.strip()
+    d=d.strip()
     if int(d) <= 31 and int(m) <= 12:
         print(f"{y:04}-{int(m):02}-{int(d):02}")
         return True
@@ -39,7 +41,7 @@ while True:
                     break
             m = n
             n = 0
-            if check_print(y, m, d):
+            if check_print(y, str(m), d):
                 break
             else:
                 pass
