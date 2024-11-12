@@ -16,5 +16,8 @@ while True:
     date = input("Date:")
     if '/' in date:
         m, d, y = date.split('/')
-        print(f"{y:04}-{m:02}-{d:02}")
+        print(f"{y:04}-{int(m):02}-{int(d):02}")
+        break
+    if
+
 
