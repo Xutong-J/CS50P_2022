@@ -3,10 +3,10 @@ from pyfiglet import Figlet
 
 figlet = Figlet()
 
-if len(argv) == 1:
+if len(sys.argv) == 1:
     txt = input("Input:")
     print(figlet.renderText(txt))
-elif len(argv) ==3:
+elif len(sys.argv) ==3:
     ...
 else:
     print("Invalid usage")
