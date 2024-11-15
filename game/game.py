@@ -1,5 +1,6 @@
 import random
-
+#重复操作可以编成函数来简化程序
+#could make a function to reduce repetitive code
 while True:
     try:
         lv = int(input("Level:"))
