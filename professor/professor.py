@@ -2,10 +2,13 @@ import random
 
 
 def main():
+    score = 0
     for _ in range(0,10):
         lv = get_level()
         x, y = generate_integer(lv)
-        check_ans(x,y)
+        if check_ans(x,y):
+            score += 1
+    print("Score :",score)
 
 
 
@@ -37,18 +40,11 @@ def check_ans(x , y):
         try:
             ans = int(input(f"{x} + {y} ="))
             if ans == x + y:
-                
-
-
-def get_positive_int(prompt):
-    while True:
-        try:
-            value = int(input(prompt))
-            if value > 0:
-                return value
+                return True
+            else:
+                print("EEE")
         except ValueError:
-            pass
-
+            print("EEE")
 
 if __name__ == "__main__":
     main()
