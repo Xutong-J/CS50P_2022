@@ -4,20 +4,20 @@ ans = random.randint(1,lv)
 while True:
     try:
         lv = int(input("Level:"))
-    if lv <= 0:
-        pass
-    else:
-        break
+        if lv <= 0:
+            pass
+        else:
+            break
     except (ValueError):
         pass
 
 while True:
     try:
         guess = int(input("Guess:"))
-    if guess <= 0:
-        pass
-    else:
-        break
+        if guess <= 0:
+            pass
+        else:
+            break
     except (ValueError):
         pass
 
