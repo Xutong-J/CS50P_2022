@@ -6,8 +6,8 @@ if len(sys.argv) == 1:
 
 try:
     n = float(sys.argv[1])
-    
-except ValueError:
+
+except (ValueError, requests.RequestException):
     sys.exit("Command-line argument is not a number")
 
 
