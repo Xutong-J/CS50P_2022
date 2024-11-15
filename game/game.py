@@ -9,6 +9,7 @@ while lv <= 0:
 guess = int(input("Guess:"))
 while lv <= 0:
     guess = int(input("Guess:"))
+    
 if guess == ans:
     print("Just right!")
 elif guess > ans:
