@@ -9,9 +9,4 @@ try:
 
 except (ValueError, requests.RequestException):
     sys.exit("Command-line argument is not a number")
-
-
-try:
-    ...
-except requests.RequestException:
-    ...
+    request
