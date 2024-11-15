@@ -8,13 +8,19 @@ while True:
         pass
     else:
         break
-    except (ValueError, ZeroDivisionError):
+    except (ValueError):
         pass
 
+while True:
+    try:
+        guess = int(input("Guess:"))
+    if guess <= 0:
+        pass
+    else:
+        break
+    except (ValueError):
+        pass
 
-guess = int(input("Guess:"))
-while lv <= 0:
-    guess = int(input("Guess:"))
 while True:
     if guess == ans:
         print("Just right!")
