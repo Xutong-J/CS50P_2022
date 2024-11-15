@@ -9,11 +9,11 @@ try:
     n = float(sys.argv[1])
     r = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
     data = r.json()
-    print(json.dump(data))
+#    print(json.dumps(data))
     bpi = data["bpi"]
     usd = bpi["USD"]
     rate = usd["rate_float"]
-    print(f"${amount:,.4f}")
+    print(f"${rate * n:,.4f}")
 except (ValueError, requests.RequestException):
     sys.exit("Command-line argument is not a number")
 
