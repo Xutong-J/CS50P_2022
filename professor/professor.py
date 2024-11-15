@@ -2,8 +2,10 @@ import random
 
 
 def main():
-    ...
-
+    lv = get_level()
+    x = generate_integer(lv)
+    y = generate_integer(lv)
+    
 
 def get_level():
     while True:
