@@ -3,8 +3,8 @@ import random
 
 def main():
     score = 0
+    lv = get_level()
     for _ in range(0,10):
-        lv = get_level()
         x, y = generate_integer(lv)
         if check_ans(x,y):
             score += 1
