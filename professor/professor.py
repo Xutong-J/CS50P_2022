@@ -5,7 +5,7 @@ def main():
     for _ in range(0,10):
         lv = get_level()
         x, y = generate_integer(lv)
-        check(x,y)
+        check_ans(x,y)
 
 
 
@@ -19,7 +19,6 @@ def get_level():
             pass
 
 def generate_integer(level):
-    for _ in range(0,10):
     match level:
         case 1 :
             x = random.randint(0,9)
