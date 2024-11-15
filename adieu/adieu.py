@@ -9,6 +9,6 @@ try:
         names.append(name)
 except EOFError:
     all_names = p.join(names)
-    print("Adieu, adieu, to",all_names)
+    print("\nAdieu, adieu, to",all_names)
 
 
