@@ -9,13 +9,14 @@ while lv <= 0:
 guess = int(input("Guess:"))
 while lv <= 0:
     guess = int(input("Guess:"))
-    
-if guess == ans:
-    print("Just right!")
-elif guess > ans:
-    print("Too large!")
-else:
-    print("Too small!")
+while True:
+    if guess == ans:
+        print("Just right!")
+        break
+    elif guess > ans:
+        print("Too large!")
+    else:
+        print("Too small!")
 
 
 
