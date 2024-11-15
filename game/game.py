@@ -1,10 +1,10 @@
 import random
 
-lv = int(input"Level:")
+lv = int(input("Level:"))
 ans = random(1,lv)
 
 while lv <= 0:
-    lv = int(input"Level:")
+    lv = int(input("Level:"))
 
 guess = int(input("Guess:"))
 while lv <= 0:
