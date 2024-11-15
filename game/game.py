@@ -1,10 +1,12 @@
 import random
 
-lv = int(input("Level:"))
 ans = random.randint(1,lv)
 
+try:
 while lv <= 0:
     lv = int(input("Level:"))
+except
+
 
 guess = int(input("Guess:"))
 while lv <= 0:
