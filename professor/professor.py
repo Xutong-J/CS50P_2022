@@ -5,13 +5,13 @@ def main():
     lv = get_level()
     x = generate_integer(lv)
     y = generate_integer(lv)
-    
+
 
 def get_level():
     while True:
         try:
             n = int(input("Level:"))
-            if n > 0:
+            if n in [1, 2, 3]:
                 return n
         except ValueError:
             pass
