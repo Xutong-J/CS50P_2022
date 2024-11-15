@@ -4,7 +4,8 @@ import random
 def main():
     for _ in range(0,10):
         lv = get_level()
-        x = generate_integer(lv)
+        x, y = generate_integer(lv)
+        check(x,y)
 
 
 
