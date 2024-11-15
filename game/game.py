@@ -1,11 +1,15 @@
 import random
 
 ans = random.randint(1,lv)
-try:
-    lv = int(input("Level:"))
-while lv <= 0:
-    lv = int(input("Level:"))
-except
+while True:
+    try:
+        lv = int(input("Level:"))
+    if lv <= 0:
+        pass
+    else:
+        break
+    except (ValueError, ZeroDivisionError):
+        pass
 
 
 guess = int(input("Guess:"))
