@@ -5,6 +5,10 @@ def main():
     lv = get_level()
     x = generate_integer(lv)
     y = generate_integer(lv)
+    while True:
+        ans = int(input(f"{x} + {y}="))
+        if ans == x + y:
+            
 
 
 def get_level():
