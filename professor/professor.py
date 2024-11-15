@@ -2,13 +2,10 @@ import random
 
 
 def main():
-    lv = get_level()
-    x = generate_integer(lv)
-    y = generate_integer(lv)
-    while True:
-        ans = int(input(f"{x} + {y}="))
-        if ans == x + y:
-            
+    for _ in range(0,10):
+        lv = get_level()
+        x = generate_integer(lv)
+
 
 
 def get_level():
@@ -21,6 +18,9 @@ def get_level():
             pass
 
 def generate_integer(level):
+    ...
+
+def check_ans(x , y):
     ...
 
 
