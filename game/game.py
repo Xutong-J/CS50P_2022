@@ -1,8 +1,8 @@
 import random
 
 ans = random.randint(1,lv)
-
 try:
+    lv = int(input("Level:"))
 while lv <= 0:
     lv = int(input("Level:"))
 except
