@@ -33,7 +33,8 @@ def generate_integer(level):
 
 
 def check_ans(x , y):
-    ...
+    ans = int(input(f"{x} + {y} ="))
+    
 
 
 if __name__ == "__main__":
