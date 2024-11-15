@@ -36,7 +36,7 @@ def generate_integer(level):
 
 
 def check_ans(x , y):
-    while True:
+    for _ in range(0,3):
         try:
             ans = int(input(f"{x} + {y} ="))
             if ans == x + y:
@@ -45,6 +45,8 @@ def check_ans(x , y):
                 print("EEE")
         except ValueError:
             print("EEE")
+    print(f"{x} + {y} = {x+y}")
+    return False
 
 if __name__ == "__main__":
     main()
