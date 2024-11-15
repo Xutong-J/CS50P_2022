@@ -33,8 +33,21 @@ def generate_integer(level):
 
 
 def check_ans(x , y):
-    ans = int(input(f"{x} + {y} ="))
-    
+    while True:
+        try:
+            ans = int(input(f"{x} + {y} ="))
+            if ans == x + y:
+                
+
+
+def get_positive_int(prompt):
+    while True:
+        try:
+            value = int(input(prompt))
+            if value > 0:
+                return value
+        except ValueError:
+            pass
 
 
 if __name__ == "__main__":
