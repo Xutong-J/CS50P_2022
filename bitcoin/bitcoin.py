@@ -11,3 +11,4 @@ except (ValueError, requests.RequestException):
     sys.exit("Command-line argument is not a number")
     r = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
     data = r.json()
+    rate = data["bpi"]
