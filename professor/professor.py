@@ -19,6 +19,7 @@ def get_level():
             pass
 
 def generate_integer(level):
+    for _ in range(0,10):
     match level:
         case 1 :
             x = random.randint(0,9)
@@ -29,7 +30,7 @@ def generate_integer(level):
         case _:
             x = random.randint(100,999)
             y = random.randint(100,999)
-            return x, y
+    return x, y
 
 
 def check_ans(x , y):
