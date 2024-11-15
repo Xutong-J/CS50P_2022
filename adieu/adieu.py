@@ -8,6 +8,7 @@ try:
         name= input("Name:")
         names.append(name)
 except EOFError:
-    p.join(names)
+    all_names = p.join(names)
+    print("Adieu, adieu, to",all_names)
 
 
