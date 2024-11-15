@@ -1,7 +1,7 @@
 import random
 
 lv = int(input("Level:"))
-ans = random(1,lv)
+ans = random(0,lv)
 
 while lv <= 0:
     lv = int(input("Level:"))
