@@ -1,12 +1,12 @@
 import random
 
-ans = random.randint(1,lv)
 while True:
     try:
         lv = int(input("Level:"))
         if lv <= 0:
             pass
         else:
+            ans = random.randint(1,lv)
             break
     except (ValueError):
         pass
