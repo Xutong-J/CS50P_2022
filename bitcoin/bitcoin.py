@@ -9,4 +9,4 @@ try:
 
 except (ValueError, requests.RequestException):
     sys.exit("Command-line argument is not a number")
-    request
+    r = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
