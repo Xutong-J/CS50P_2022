@@ -3,6 +3,11 @@ from plates import is_valid
 def test_long():
     assert is_valid("AAAAA678") == False
     assert is_valid("W") == False
+    assert is_valid("AA") == True
+    assert is_valid("A2") == False
+
+assert is_valid("2A") == False
+assert is_valid("22") == False
 def test_starter():
     assert is_valid("W3ERD") == False
     assert is_valid("2ewrt") == False
