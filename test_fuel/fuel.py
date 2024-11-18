@@ -21,7 +21,7 @@ def gauge(percentage):
     elif percentage <= 1:
         return 'E'
     else:
-        return f"{rslt}%"
+        return f"{percentage}%"
 
 
 if __name__ == "__main__":
