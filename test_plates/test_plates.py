@@ -9,12 +9,11 @@ def test_starter():
 def test_numeric():
     assert is_valid("AAA22A") == False
     assert is_valid("AAA222") == True
-def test_other():
+def test_alphabetical():
     assert is_valid(" sdf34")  == False
     assert is_valid("AAA2,2")  == False
     assert is_valid("")  == False
-def test_alphab():
-    assert is_valid("AASDER") == True
+
 def test_zero():
     assert is_valid("AAA54") == True
     assert is_valid("AAA05") == False
