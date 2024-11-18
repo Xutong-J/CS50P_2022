@@ -1,7 +1,7 @@
 def main():
     while True:
         try:
-            convert(input("Fraction:"))
+            printconvert(input("Fraction:"))
 
         except (ValueError, ZeroDivisionError, ):
             pass
@@ -18,8 +18,7 @@ def gauge(percentage):
     elif percentage <= 1:
         return 'E'
     else:
-        print(f"{rslt}%")
-        break
+        return f"{rslt}%"
 
 
 if __name__ == "__main__":
