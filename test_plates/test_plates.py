@@ -12,3 +12,6 @@ def test_middle():
 def test_other():
     assert is_valid(" sdf34")  == False
     assert is_valid("AAA2,2")  == False
+    assert is_valid("")  == False
+def test_alphab():
+    assert is_valid("AASDER") == True
