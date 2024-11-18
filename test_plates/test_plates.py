@@ -13,7 +13,7 @@ def test_alphabetical():
     assert is_valid(" sdf34")  == False
     assert is_valid("AAA2,2")  == False
     assert is_valid("")  == False
-
+    assert is_valid("ABCDEF")  == True
 def test_zero():
     assert is_valid("AAA54") == True
     assert is_valid("AAA05") == False
