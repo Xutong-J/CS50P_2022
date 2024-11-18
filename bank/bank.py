@@ -4,7 +4,7 @@ def main():
 
 
 def value(greeting):
-    if greeting[]
+    if greeting[:4].lower() == "hello"
 
 
 if __name__ == "__main__":
