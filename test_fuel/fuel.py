@@ -1,7 +1,7 @@
 def main():
     while True:
         try:
-            printconvert(input("Fraction:"))
+            print(gauge(convert(input("Fraction:"))))
 
         except (ValueError, ZeroDivisionError, ):
             pass
@@ -9,7 +9,6 @@ def main():
 def convert(fraction):
     x, y = fraction.split("/")  # 使用分隔符 '/' 分割字符串
     return round(int(x) / int(y) * 100)
-
 
 
 def gauge(percentage):
