@@ -8,10 +8,10 @@ def main():
 
 def convert(fraction):
     x, y = fraction.split("/")  # 使用分隔符 '/' 分割字符串
-    if ('.' in x+y) or (int(x)> int(y)):
-        raise ValueError
     if y == '0':
         raise ZeroDivisionError
+    if ('.' in x+y) or (int(x)> int(y)):
+        raise ValueError
     return round(int(x) / int(y) * 100)
 
 
