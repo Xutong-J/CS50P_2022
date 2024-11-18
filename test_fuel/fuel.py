@@ -2,6 +2,7 @@ def main():
     while True:
         try:
             print(gauge(convert(input("Fraction:"))))
+            break
         except (ValueError, ZeroDivisionError, ):
             pass
 
