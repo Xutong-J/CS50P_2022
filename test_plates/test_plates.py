@@ -21,3 +21,4 @@ def test_alphabetical():
 def test_zero():
     assert is_valid("AAA54") == True
     assert is_valid("AAA05") == False
+cd
