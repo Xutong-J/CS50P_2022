@@ -6,7 +6,7 @@ def test_long():
 def test_starter():
     assert is_valid("W3ERD") == False
     assert is_valid("2ewrt") == False
-def test_middle():
+def test_numeric():
     assert is_valid("AAA22A") == False
     assert is_valid("AAA222") == True
 def test_other():
@@ -15,3 +15,6 @@ def test_other():
     assert is_valid("")  == False
 def test_alphab():
     assert is_valid("AASDER") == True
+def test_zero():
+    assert is_valid("AAA54") == True
+    assert is_valid("AAA05") == False
