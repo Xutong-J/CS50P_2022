@@ -9,12 +9,13 @@ if file_name[-3:] == '.py':
     try:
         with open(file_name,'r') as f:
             lines = f.readlines()
+            n = 0
         for line in lines:
-            
-            if lines and (lines[-1].strip() == "" or line:
-            lines.pop()  # 删除最后一行空白行
+            stripped_line = line.lstrip()
+            if stripped_line and not stripped_line.startswith("#"):
+                n += 1
 
-        print(len(lines))
+        print(n)
     except FileNotFoundError:
         sys.exit("File does not exist")
 else:
