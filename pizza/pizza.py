@@ -5,10 +5,10 @@ from tabulate import tabulate
 def main():
     if len(sys.argv) == 1:
         sys.exit("Too few command-line arguments")
-    elif len(sys.argv) > 2:
+    if len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
     file_name = sys.argv[1]
-    if file_name[-3:] == '.py':
+    if file_name[-4:] == '.csv':
         try:
             with open(file_name,'r') as f:
                 lines = f.readlines()
@@ -22,4 +22,4 @@ def main():
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
-        sys.exit("Not a Python file")
+        sys.exit("Not a CSV file")
