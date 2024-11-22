@@ -10,12 +10,12 @@ def main():
     file_name = sys.argv[1]
     if file_name[-4:] == '.csv':
         try:
+            list = []
             with open(file_name,'r') as f:
-                reader = csv.DictRead(f)
-                filename = reader[]
-
-
-            print(n)
+                for line in f:
+                    row = line.rstrip().split(",")
+                    list.append(row)
+                    print(tabulate(list, headers="firstrow", tablefmt="grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
