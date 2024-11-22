@@ -10,7 +10,7 @@ def main():
     file_name = sys.argv[1]
     if file_name[-4:] == '.csv':
         try:
-            method1(file_name)
+            method2(file_name)
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
@@ -25,12 +25,10 @@ def method1(file_name):
             list.append(row)
         print(tabulate(list, headers="firstrow", tablefmt="grid"))
 
-def method2(file_name)：
+def method2(file_name):
     with open(file_name,'r') as f:
-        reader = csv.DictRead(f)
-        
-        print(tabulate(list, headers="firstrow", tablefmt="grid"))
-
+        reader = csv.DictReader(f)
+        print(reader)
 
 if __name__ == "__main__":
     main()
