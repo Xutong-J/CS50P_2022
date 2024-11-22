@@ -27,7 +27,6 @@ def method1(file_name):
 
 def method2(file_name):
     with open(file_name,'r') as f:
-        header = f[0].split(',')
         reader = csv.DictReader(f)
         rows = list(reader)
         print(tabulate(rows, headers="keys", tablefmt="grid"))
