@@ -9,12 +9,8 @@ if file_name[-3:] == '.py':
     try:
         with open(file_name,'r') as f:
             lines = f.readlines()
-        if  lines[-1].strip() == "":
-            lines.pop()  # 删除最后一行空白行
         print(len(lines))
     except FileNotFoundError:
         sys.exit("File does not exist")
 else:
     sys.exit("Not a Python file")
-
-S
