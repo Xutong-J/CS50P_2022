@@ -11,12 +11,9 @@ def main():
     if file_name[-4:] == '.csv':
         try:
             with open(file_name,'r') as f:
-                lines = f.readlines()
-                n = 0
-            for line in lines:
-                stripped_line = line.lstrip()
-                if stripped_line and not stripped_line.startswith("#"):
-                    n += 1
+                reader = f.DictRead(f)
+                filename = reader[]
+
 
             print(n)
         except FileNotFoundError:
