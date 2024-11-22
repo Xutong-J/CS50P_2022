@@ -27,6 +27,7 @@ def method1(file_name):
 
 def method2(file_name):
     with open(file_name,'r') as f:
+        header = f[0].strip(',')
         reader = csv.DictReader(f)
         print(reader)
 
