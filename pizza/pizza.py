@@ -29,7 +29,8 @@ def method2(file_name):
     with open(file_name,'r') as f:
         header = f[0].split(',')
         reader = csv.DictReader(f)
-        for row
+        print(tabulate({header[0]: ["Alice", "Bob"],
+                        "Age": [24, 19]}, headers="keys"))
         print(reader)
 
 if __name__ == "__main__":
