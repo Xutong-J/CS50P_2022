@@ -15,8 +15,10 @@ def main():
                 for line in f:
                     row = line.rstrip().split(",")
                     list.append(row)
-                    print(tabulate(list, headers="firstrow", tablefmt="grid"))
+                print(tabulate(list, headers="firstrow", tablefmt="grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
         sys.exit("Not a CSV file")
+
+main()
