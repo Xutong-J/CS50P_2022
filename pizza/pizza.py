@@ -27,8 +27,9 @@ def method1(file_name):
 
 def method2(file_name):
     with open(file_name,'r') as f:
-        header = f[0].strip(',')
+        header = f[0].split(',')
         reader = csv.DictReader(f)
+        for row
         print(reader)
 
 if __name__ == "__main__":
