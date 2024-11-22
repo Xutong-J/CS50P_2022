@@ -9,7 +9,7 @@ if file_name[-3:] == '.py':
     try:
         with open(file_name,'r') as f:
             lines = f.readlines()
-        if lines and lines[-1].strip() == "":
+        if  lines[-1].strip() == "":
             lines.pop()  # 删除最后一行空白行
         print(len(lines))
     except FileNotFoundError:
