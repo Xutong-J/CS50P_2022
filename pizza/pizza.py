@@ -11,7 +11,7 @@ def main():
     if file_name[-4:] == '.csv':
         try:
             with open(file_name,'r') as f:
-                reader = f.DictRead(f)
+                reader = csv.DictRead(f)
                 filename = reader[]
 
 
