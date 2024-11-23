@@ -11,6 +11,6 @@ def main():
         try:
             method2(file_name)
         except FileNotFoundError:
-            sys.exit("Could not read {file_name[1]}")
+            sys.exit("Could not read {file_name}")
     else:
         sys.exit("Not a CSV file")
