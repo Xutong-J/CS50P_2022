@@ -25,7 +25,7 @@ def read_write(file_name,out_name):
         for row in reader:
             last,first = row["name"].strip().split(', ')
             students.append({"first": first, "last": last, "house": row["house"]})
-        for student in sorted(students, key=lambda student: student["first"]):
+        for student in students:
             writer.writerow(student)
 
 if __name__ == "__main__":
