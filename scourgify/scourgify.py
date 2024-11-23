@@ -21,12 +21,12 @@ def read_write(file_name,out_name):
     with open(file_name,'r') as f, open(out_name,'w') as o:
         reader = csv.DictReader(f)
         writer = csv.DictWriter(o, fieldnames=["first", "last", "house"])
+        writer.writeheader()
         for row in reader:
             last,first = row["name"].strip().split(', ')
             students.append({"first": first, "last": last, "home": row["house"]})
         for student in sorted(students, key=lambda student: student["first"]):
-            writer.writeheader()
-            writer.writerow({'first': {first}, 'last':{last}, 'house': {row['house']}})
+            writer.writerow({'first': first, 'last':last, 'house': row['house']})
 
 if __name__ == "__main__":
     main()
