@@ -17,7 +17,7 @@ def main():
 
 
 def read(file_name,out_name):
-    with open(file_name) as f, open(out_name) as o:
+    with open(file_name,'r') as f, open(out_name,'w') as o:
         reader = csv.DictReader(f)
         writer = csv.DictWriter(o)
     for row in reader:
