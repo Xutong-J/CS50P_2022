@@ -26,7 +26,7 @@ def read_write(file_name,out_name):
         students.append({"first": first, "last": last, "home": row["home"]})
     for student in sorted(students, key=lambda student: student["first"]):
         writer.writeheader()
-        writer.writerow({'first_name': {first}, 'last_name':{last}, 'house': {row['house']}})
+        writer.writerow({'first': {first}, 'last':{last}, 'house': {row['house']}})
 
 if __name__ == "__main__":
     main()
