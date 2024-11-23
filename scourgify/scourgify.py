@@ -21,7 +21,7 @@ def read(file_name,out_name):
         reader = csv.DictReader(f)
         writer = csv.DictWriter(o)
     for row in reader:
-        last,first = row["name"].split(', ')
+        last,first = row["name"].strip().split(', ')
         writer
 
 
