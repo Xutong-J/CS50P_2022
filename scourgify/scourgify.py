@@ -24,9 +24,9 @@ def read_write(file_name,out_name):
         writer.writeheader()
         for row in reader:
             last,first = row["name"].strip().split(', ')
-            students.append({"first": first, "last": last, "home": row["house"]})
-        for student in sorted(students, key=lambda student: student["first"]):
-            writer.writerow({'first': first, 'last':last, 'house': row['house']})
+            writer.writerow({"first": first, "last": last, "house": row["house"]})
+        #for student in sorted(students, key=lambda student: student["first"]):
+            #writer.writerow({'first': first, 'last':last, 'house': row['house']})
 
 if __name__ == "__main__":
     main()
