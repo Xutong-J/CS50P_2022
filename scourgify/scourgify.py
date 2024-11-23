@@ -25,8 +25,7 @@ def read_write(file_name,out_name):
         for row in reader:
             last,first = row["name"].strip().split(', ')
             students.append({"first": first, "last": last, "house": row["house"]})
-        for student in students:
-            writer.writerow(student)
+        writer.writerows(students)
 
 if __name__ == "__main__":
     main()
