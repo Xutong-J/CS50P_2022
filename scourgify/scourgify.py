@@ -16,10 +16,12 @@ def main():
         sys.exit("Not a CSV file")
 
 
-def read(file_name):
-    with open(file_name) as f:
+def read(file_name,out_name):
+    with open(file_name) as f, open(out_name) as o:
         reader = csv.DictReader(f)
+        writer = csv.DictWriter(o)
     for row in reader:
         last,first = row["name"].split(', ')
-        
+        writer
+
 
