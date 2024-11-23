@@ -25,4 +25,5 @@ def read_write(file_name,out_name):
         writer.writeheader()
         writer.writerow({'first_name': {first}, 'last_name':{last}, 'house': {row['house']}})
 
-
+if __name__ == "__main__":
+    main()
