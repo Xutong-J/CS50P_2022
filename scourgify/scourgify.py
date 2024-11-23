@@ -14,3 +14,12 @@ def main():
             sys.exit("Could not read {file_name}")
     else:
         sys.exit("Not a CSV file")
+
+
+def read(file_name):
+    with open(file_name) as f:
+        reader = csv.DictReader(f)
+    for row in reader:
+        last,first = row["name"].split(', ')
+        
+
