@@ -11,7 +11,7 @@ def main():
         try:
             read_write(file_name,out_name)
         except FileNotFoundError:
-            sys.exit("Could not read {file_name}")
+            sys.exit(f"Could not read {file_name}")
     else:
         sys.exit("Not a CSV file")
 
