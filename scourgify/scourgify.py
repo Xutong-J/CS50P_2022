@@ -20,7 +20,7 @@ def read_write(file_name,out_name):
     students = []
     with open(file_name,'r') as f, open(out_name,'w') as o:
         reader = csv.DictReader(f)
-        writer = csv.DictWriter(o)
+        writer = csv.DictWriter(o, fieldnames=["first", "last", "house"])
     for row in reader:
         last,first = row["name"].strip().split(', ')
         students.append({"first": first, "last": last, "home": row["home"]})
