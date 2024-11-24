@@ -7,7 +7,8 @@ def main():
         sys.exit("Too few command-line arguments")
     if len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
-    img_in, img_out = sys.argv[1], sys.argv[2]
+    in_path, out_path = sys.argv[1], sys.argv[2]
+    if in_path, out_path
     if Path(img_in).suffix.lower() in ['.jpg', '.jpeg', '.png']:
         try:
             read_write(img_in, img_out)
