@@ -24,4 +24,5 @@ def main():
 def process(in_path, out_path):
     shirt = Image.open("shirt.png")
     size = shirt.size
+    photo = Image.open(in_path)
 
