@@ -6,10 +6,10 @@ def main():
         sys.exit("Too few command-line arguments")
     if len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
-    file_name, out_name = sys.argv[1], sys.argv[2]
-    if file_name[-4:] == '.csv':
+    img_in, img_out = sys.argv[1], sys.argv[2]
+    if img_in[-4:].lower() in ['.jpg', '.jpeg', '.png']:
         try:
-            read_write(file_name,out_name)
+            read_write(img_in, img_out)
         except FileNotFoundError:
             sys.exit(f"Could not read {file_name}")
     else:
