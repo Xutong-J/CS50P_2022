@@ -1,5 +1,6 @@
 from PIL import Image
 import sys
+from pathlib import Path
 
 def main():
     if len(sys.argv) == 1:
@@ -7,7 +8,7 @@ def main():
     if len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
     img_in, img_out = sys.argv[1], sys.argv[2]
-    if img_in[-4:].lower() in ['.jpg', '.jpeg', '.png']:
+    if Path(img_in).suffix.lower() in ['.jpg', '.jpeg', '.png']:
         try:
             read_write(img_in, img_out)
         except FileNotFoundError:
