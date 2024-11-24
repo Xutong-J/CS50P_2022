@@ -19,4 +19,4 @@ def main():
         except FileNotFoundError:
             sys.exit('Input does not exist')
     else:
-        sys.exit("Not a CSV file")
+        sys.exit("Invalid output")
