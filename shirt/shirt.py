@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageOps
 import sys
 from pathlib import Path
 
@@ -27,7 +27,7 @@ def process(in_path, out_path):
     photo = Image.open(in_path)
     after = ImageOps.fit(photo, size, Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
     after.paste(shirt, box=None, mask=shirt)
-    photo.save(out_path)
+    after.save(out_path)
 
 if __name__ == "__main__":
     main()
