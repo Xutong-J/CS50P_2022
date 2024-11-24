@@ -17,6 +17,6 @@ def main():
         try:
             read_write(img_in, img_out)
         except FileNotFoundError:
-            sys.exit(f"Could not read {file_name}")
+            sys.exit('Input does not exist')
     else:
         sys.exit("Not a CSV file")
