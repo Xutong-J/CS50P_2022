@@ -11,12 +11,17 @@ def main():
     in_path, out_path = sys.argv[1], sys.argv[2]
     in_ext, out_ext =Path(in_path).suffix, Path(out_path).suffix
 
-    if in_ext != out_ext:
-        sys.exit("Input and output have different extensions")
-    if in_ext.lower() in ['.jpg', '.jpeg', '.png']:
+    if out_ext.lower() in ['.jpg', '.jpeg', '.png']:
+        if in_ext != out_ext:
+            sys.exit("Input and output have different extensions")
         try:
-            read_write(img_in, img_out)
+            process(in_path, out_path)
         except FileNotFoundError:
             sys.exit('Input does not exist')
     else:
         sys.exit("Invalid output")
+
+def process(in_path, out_path):
+    shirt = Image.open("shirt.png")
+    size = shirt.size
+
