@@ -25,6 +25,8 @@ def process(in_path, out_path):
     shirt = Image.open("shirt.png")
     photo = Image.open(in_path)
     shirt_resized = shirt.resize(photo.size)
-    out_photo = photo.paste(shirt_resized, shirt_resized)
-    out_photo.save(out_path)
+    photo.paste(shirt_resized, shirt_resized)
+    photo.save(out_path)
 
+if __name__ == "__main__":
+    main()
