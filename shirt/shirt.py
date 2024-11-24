@@ -23,9 +23,10 @@ def main():
 
 def process(in_path, out_path):
     shirt = Image.open("shirt.png")
+    size = shirt.size
     photo = Image.open(in_path)
-    shirt_resized = shirt.resize(photo.size)
-    photo.paste(shirt_resized, shirt_resized)
+    after = ImageOps.fit(photo, size, Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+    after.paste(shirt, box=None, mask=shirt)
     photo.save(out_path)
 
 if __name__ == "__main__":
