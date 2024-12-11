@@ -8,7 +8,7 @@ def main():
 
 def validate(ip):
     pattern = r"^#d{1,3}/.d{1,3}/.d{1,3}/.d{1,3}$"
-    if match:=re.search(pattern, ip.strip(), flag=0)
+    if match:=re.search(pattern, ip.strip(), flag=0):
 
 ...
 
