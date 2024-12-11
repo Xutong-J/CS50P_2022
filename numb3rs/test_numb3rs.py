@@ -2,7 +2,7 @@ from numb3rs import validate
 
 def test_non_num():
     assert validate("cat") == "False"
-    assert validate("CAT.cat.0.0) == "False"
+    assert validate("CAT.cat.0.0") == "False"
 
 def test_big():
     assert validate("512.512.512.512") == "False"
