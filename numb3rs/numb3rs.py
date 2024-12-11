@@ -7,7 +7,7 @@ def main():
 
 
 def validate(ip):
-    pattern = r"^(d{1,3})/.(d{1,3})/.(d{1,3})/.(d{1,3})$"
+    pattern = "^(d{1,3})/.(d{1,3})/.(d{1,3})/.(d{1,3})$"
     if matches:=re.search(pattern, ip.strip()):
         for n in range(1,5):
             if 0 <= int(matches.group(n)) <= 255:
