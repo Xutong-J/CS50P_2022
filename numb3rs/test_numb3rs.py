@@ -27,8 +27,7 @@ def test_invalid_ipv4():
     assert numb3rs.validate("192.168..1") == False  # Missing octet
     assert numb3rs.validate("192.168.0.1.2") == False  # Extra octet
     assert numb3rs.validate("10.10.10.10.10") == False  # Five octets
-    assert numb3rs.validate("2001:0db8:85a3:0000:0000:8a2e:03
-    70:7334") == False  # An IPv6 address
+    assert numb3rs.validate("2001:0db8:85a3:0000:0000:8a2e:0370:7334") == False  # An IPv6 address
 
 
 
