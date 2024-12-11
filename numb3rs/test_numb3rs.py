@@ -1,4 +1,10 @@
 from numb3rs import validate
+import pytest
+import re
+
+def main():
+    test_format()
+    test_input()
 
 def test_non_num():
     assert validate("cat") == False
@@ -21,3 +27,6 @@ def test_other_split():
     assert validate("192,168,1,1")==False
     assert validate("192 168 1 1")==False
     assert validate("192-168-1-1")==False
+
+if __name__ == "__main__":
+    main()
