@@ -7,8 +7,8 @@ def main():
 
 
 def validate(ip):
-    pattern = r"^(d{1,3})\.(d{1,3})\.(d{1,3})\.(d{1,3})$"
-    matches=re.search(pattern, ip.strip())
+    pattern = r"^(d+)\.(d+)\.(d+)\.(d+)$"
+    matches=re.search(pattern, ip)
     if matches:
         for n in range(1,5):
             if 0 <= int(matches.group(n)) <= 255:
