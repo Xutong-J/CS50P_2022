@@ -5,7 +5,7 @@ def main():
 
 
 def validate(ip):
-    pattern = r"^(\d+)\.(\d+)\.(\d+)\.(\d+)$"
+    pattern = r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$"
     matches=re.search(pattern, ip.strip())
     if matches:
         for n in range(1,5):
