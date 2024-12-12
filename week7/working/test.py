@@ -4,7 +4,7 @@ import re
 s = "9:60 AM to 5:60 PM"
 
 # 正则表达式
-pattern = r"^([0-9：: ]+)(AM|PM) to ([0-9：: ]+)(AM|PM)$"
+pattern = r"^([0-9\: ]+)(AM|PM) to ([0-9\: ]+)(AM|PM)$"
 
 # 使用re.search查找匹配项
 matches = re.search(pattern, s.strip())
