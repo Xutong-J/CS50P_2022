@@ -19,7 +19,7 @@ def process(t, flag):
     if ':' in t:
         h, m = value(int(t.split(':').strip()))
     else:
-        h = t
+        h = int(t)
         m = 0
 
     if flag == "PM":
