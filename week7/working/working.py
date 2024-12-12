@@ -24,8 +24,12 @@ def process(t, flag):
     else:
         h, m = value(int(t.strip()),0)
 
-    if flag == "PM":
+    if h = 12:
+        if flag == "AM":
+            h = 0
+    elif flag == "PM" and h != 12:
         h = 12 + h
+
     return f"{h:02}:{m:02}"
 
 
