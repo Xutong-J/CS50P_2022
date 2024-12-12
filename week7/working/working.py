@@ -12,12 +12,16 @@ def convert(s):
     if matches:
         t1, t2 = matches.group(1)matches.group(3)
         flag1, flag2 = matches.group(2), matches.group(4)
+        return process(t1, flag1)+" to "+process(t2,flag2)
 
 
 def process(t, flag):
     if ':' in t:
-        h, m = value(t.split(':').strip())
-        
+        h, m = value(int(t.split(':').strip()))
+        if flag = "PM":
+            h += 12
+        return f"{h:02}:{m:02}"
+
 
 
 def value(h,m=None):
