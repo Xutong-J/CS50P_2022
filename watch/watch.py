@@ -8,9 +8,11 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r'src="(.+embed/).*/([^"])"', s.strip())
+    matches = re.search(r'src="(.+embed/).*([^"])"', s.strip())
     if matches:
-        return matches.group(1)
+        if ".youtube.com/embed/" in matches.group(1):
+            return 
+
     else:
         return None
 
