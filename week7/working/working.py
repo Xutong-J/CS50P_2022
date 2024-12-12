@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    ...
+    pattern = r"^[0-9]+
 
 
 ...
