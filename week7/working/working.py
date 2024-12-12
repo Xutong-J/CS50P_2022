@@ -19,19 +19,19 @@ def convert(s):
 
 def process(t, flag):
     if ':' in t:
-        h_str, m_str = t.split(':').strip()
-        h, m = value(int(h_str),int(m_str))
+        h_str, m_str = t.split(':')
+        h, m = value(int(h_str.strip()),int(m_str.strip()))
     else:
-        h = int(t)
-        m = 0
+        h =
+        h, m = value(int(t.strip()))
 
     if flag == "PM":
         h = 12 + h
     return f"{h:02}:{m:02}"
 
 
-def value(h,m=None):
-    if (m >= 60 or m==False) or h>12:
+def value(h,m):
+    if (m >= 60 ) or h>12:
         raise ValueError
     else:
         return h,m
