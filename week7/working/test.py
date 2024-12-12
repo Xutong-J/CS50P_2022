@@ -1,7 +1,7 @@
 import re
 
 # 测试字符串
-s = "9:60 AM to 5:60 PM"
+s = "10: 30 PM to 8 AM"
 
 # 正则表达式
 pattern = r"^([0-9\: ]+)(AM|PM) to ([0-9\: ]+)(AM|PM)$"
