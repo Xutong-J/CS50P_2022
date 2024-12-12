@@ -8,7 +8,8 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r'^(?:<iframe)+.?scr="(.+)".*(?:</iframe>)&', s.strip())
+    #matches = re.search(r'^(?:<iframe)+.?scr="(.+)".*(?:</iframe>)&', s.strip())
+    matches = re.search(r'^(?:<iframe).?scr="(.+)".*(?:</iframe>)&', s.strip())
     if matches:
         return matches.group(1)
     else:
