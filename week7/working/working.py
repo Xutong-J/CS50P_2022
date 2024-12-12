@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    pattern = r"^([0-9\: ]+)(AM|PM) to ([0-9\: ]+)(AM|PM)$"
+    pattern = r"^([0-9\:]+)\s(AM|PM) to ([0-9\:]+)\s(AM|PM)$"
     matches = re.search(pattern, s.strip())
     if matches:
         t1, t2 = matches.group(1), matches.group(3)
@@ -24,7 +24,7 @@ def process(t, flag):
     else:
         h, m = value(int(t.strip()),0)
 
-    if h = 12:
+    if h == 12:
         if flag == "AM":
             h = 0
     elif flag == "PM" and h != 12:
