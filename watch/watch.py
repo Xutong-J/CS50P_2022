@@ -8,8 +8,9 @@ def main():
 
 
 def parse(s):
-    if re.search(r'src="([^"]+)"', s.strip()):
-        param = re.search(r"(http(s)*:\/\/(www\.)*youtube\.com\/embed\/)([a-z_A-Z_0-9]+)", s)
+    matches = re.search(r'src="([^"]+)"', s.strip())
+    if matches:
+        param = re.search(r"(http(s)*:\/\/(www\.)*youtube\.com\/embed\/)([a-z_A-Z_0-9]+)", matches.group(1))
         return matches.group(1)
     else:
         return None
