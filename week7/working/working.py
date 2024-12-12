@@ -28,11 +28,10 @@ def process(t, flag):
 
 
 def value(h,m=None):
-    if (m >60 or n==None) or h>12:
-            raise ValueError
+    if (m >60 or m==None) or h>12:
+        raise ValueError
     else:
         return h,m
-...
 
 
 if __name__ == "__main__":
