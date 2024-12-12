@@ -22,7 +22,6 @@ def process(t, flag):
         h_str, m_str = t.split(':')
         h, m = value(int(h_str.strip()),int(m_str.strip()))
     else:
-        h =
         h, m = value(int(t.strip()))
 
     if flag == "PM":
