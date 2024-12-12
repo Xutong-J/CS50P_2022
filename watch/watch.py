@@ -11,8 +11,8 @@ def parse(s):
     matches = re.search(r'^(?:<iframe)+.?scr="(.+)".*(?:</iframe>)&', s.strip())
     if matches:
         return matches.group(1)
-        else:
-            return None
+    else:
+        return None
 
 
 if __name__ == "__main__":
