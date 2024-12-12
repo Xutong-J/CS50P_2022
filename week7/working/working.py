@@ -22,7 +22,7 @@ def process(t, flag):
         h_str, m_str = t.split(':')
         h, m = value(int(h_str.strip()),int(m_str.strip()))
     else:
-        h, m = value(int(t.strip()))
+        h, m = value(int(t.strip()),0)
 
     if flag == "PM":
         h = 12 + h
