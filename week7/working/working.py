@@ -10,7 +10,7 @@ def convert(s):
     pattern = r"^([0-9:]) (AM|PM) to ([0-9:]) (AM|PM)$"
     matches = re.search(pattern, s.strip())
     if matches:
-        t1, t2 = matches.group(1)matches.group(3)
+        t1, t2 = matches.group(1), matches.group(3)
         flag1, flag2 = matches.group(2), matches.group(4)
         return process(t1, flag1)+" to "+process(t2,flag2)
 
@@ -22,7 +22,7 @@ def process(t, flag):
         h = t
         m = 0
 
-    if flag = "PM":
+    if flag == "PM":
         h += 12
     return f"{h:02}:{m:02}"
 
