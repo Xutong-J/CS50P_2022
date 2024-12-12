@@ -8,7 +8,7 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r'src="([^"]+)"', s.strip())
+    matches = re.search(r'src="(.+embed/).*/([^"])"', s.strip())
     if matches:
         return matches.group(1)
     else:
