@@ -12,7 +12,7 @@ def convert(s):
     if matches:
         t1, t2 = int(matches.group(1)), int(matches.group(3))
         flag1, flag2 = matches.group(2), matches.group(4)
-        for
+        if ':' in t1:
 
 
 ...
