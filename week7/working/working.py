@@ -19,7 +19,8 @@ def convert(s):
 
 def process(t, flag):
     if ':' in t:
-        h, m = value(int(t.split(':')))
+        h_str, m_str = t.split(':').strip()
+        h, m = value(int(h_str),int(m_str))
     else:
         h = int(t)
         m = 0
