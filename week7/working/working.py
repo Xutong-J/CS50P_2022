@@ -23,7 +23,7 @@ def process(t, flag):
         m = 0
 
     if flag == "PM":
-        h += 12
+        h = 12 + h
     return f"{h:02}:{m:02}"
 
 
