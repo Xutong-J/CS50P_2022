@@ -8,8 +8,8 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r'src="([^"]+)"', s.strip())
-    if matches:
+re.search(r'src="([^"]+)"', s.strip())
+    if re.search(r'src="([^"]+)"', s.strip()):
         
         return matches.group(1)
     else:
