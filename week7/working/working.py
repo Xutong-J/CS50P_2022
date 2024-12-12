@@ -13,6 +13,8 @@ def convert(s):
         t1, t2 = matches.group(1), matches.group(3)
         flag1, flag2 = matches.group(2), matches.group(4)
         return process(t1, flag1)+" to "+process(t2,flag2)
+    else:
+        raise ValueError
 
 
 def process(t, flag):
