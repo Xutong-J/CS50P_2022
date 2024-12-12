@@ -14,5 +14,5 @@ def test_VE():
         convert("09:00 AM - 17:00 PM")
 
 def test_nomal():
-    
+    assert convert("9:00 AM to 5:00 PM") == "09:00 to 17:00"
 
