@@ -16,8 +16,8 @@ def convert(s):
 
 def process(t, flag):
     if ':' in t:
-        h, m = t.split(':')
-        h,
+        h, m = value(t.split(':').strip())
+
 
 def value(h,m=None):
     if (m >60 or n==None) or h>12:
