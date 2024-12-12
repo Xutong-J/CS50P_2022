@@ -18,10 +18,13 @@ def convert(s):
 def process(t, flag):
     if ':' in t:
         h, m = value(int(t.split(':').strip()))
-        if flag = "PM":
-            h += 12
-        return f"{h:02}:{m:02}"
+    else:
+        h = t
+        m = 0
 
+    if flag = "PM":
+        h += 12
+    return f"{h:02}:{m:02}"
 
 
 def value(h,m=None):
