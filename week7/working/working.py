@@ -30,7 +30,7 @@ def process(t, flag):
     return f"{h:02}:{m:02}"
 
 
-def value(h,m=False):
+def value(h,m=None):
     if (m >= 60 or m==False) or h>12:
         raise ValueError
     else:
