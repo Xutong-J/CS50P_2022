@@ -10,7 +10,7 @@ def main():
 def parse(s):
     matches = re.search(r'src="([^"]+)"', s.strip())
     if matches:
-        param = re.search(r"(?:http(s)*:\/\/(www\.)*youtube\.com\/embed\/)([a-z_A-Z_0-9]+)", matches.group(1))
+        param = re.search(r"http(?:s)*:\/\/(?:www\.)*youtube\.com\/embed\/([a-z_A-Z_0-9]+)", matches.group(1))
         if param:
             return "https://youtu.be/" + param.group(1)
         else:
