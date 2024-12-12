@@ -17,11 +17,10 @@ def convert(s):
 def process(t, flag):
     if ':' in t:
         h, m = t.split(':')
-        if
+        h,
 
 def value(h,m=None):
-    if m:
-        if m >60 or h>12:
+    if (m >60 or n==None) or h>12:
             raise ValueError
     else:
         return h,m
