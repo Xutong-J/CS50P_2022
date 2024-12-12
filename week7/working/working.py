@@ -21,12 +21,10 @@ def process(t, flag):
 
 def value(h,m=None):
     if m:
-        if m >60:
+        if m >60 or h>12:
             raise ValueError
-    if 0 <= h <13:
-        return h,m
     else:
-        raise ValueError
+        return h,m
 ...
 
 
