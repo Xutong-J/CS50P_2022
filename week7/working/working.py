@@ -12,9 +12,21 @@ def convert(s):
     if matches:
         t1, t2 = int(matches.group(1)), int(matches.group(3))
         flag1, flag2 = matches.group(2), matches.group(4)
-        if ':' in t1:
 
 
+def process(t, flag):
+    if ':' in t:
+        h, m = t.split(':')
+        if
+
+def value(h,m=None):
+    if m:
+        if m >60:
+            raise ValueError
+    if 0 <= h <13:
+        return h,m
+    else:
+        raise ValueError
 ...
 
 
