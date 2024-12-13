@@ -22,6 +22,8 @@ def test_VE():
         convert("5AM to 9PM")
     with pytest.raises(ValueError):
         convert("11:00 AM 5:20 PM")
+    with pytest.raises(ValueError):
+        convert("13:00 AM to 5:60 PM")
 
 
 def test_nomal():
