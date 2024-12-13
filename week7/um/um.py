@@ -8,7 +8,7 @@ def main():
 
 def count(s):
     pattern = r"\b(um)(?:[\W]+)*"
-    return len(re.findall(pattern,s.strip()))
+    return len(re.findall(pattern,s.strip(), re.IGNORECASE))
 
 
 if __name__ == "__main__":
