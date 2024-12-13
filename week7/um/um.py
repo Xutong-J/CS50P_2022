@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    pattern = r"(?:[\b]+)*(um)(?:[\D\W]+)*"
+    pattern = r"(\bum)(?:[\D\W]+)*"
     return len(re.findall(pattern,s.strip()))
 
 
