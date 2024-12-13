@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    pattern = r"(?:[^0-9a-zA-Z]+)(um  )"
+    pattern = r"(?:[\D\W\s]+)(um)(?:[\D\W]+)"
 
 
 ...
