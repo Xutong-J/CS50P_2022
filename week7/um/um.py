@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    ...
+    pattern = r""
 
 
 ...
