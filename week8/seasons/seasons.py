@@ -16,7 +16,7 @@ def get_birth(birth):
         month = int(matches.group(2))
         day = int(matches.group(3))
     else:
-        sys.exit()
+        sys.exit("Invalid date")
 
     return date(year, month, day)
 
