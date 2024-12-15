@@ -23,7 +23,7 @@ def get_birth(birth):
 def calculate(date1,date2):
     days_to_birthday = abs(date1 - date2).days
     p = engine()
-    return f"{p.number_to_words(days_to_birthday*24*60, andword="").upper()} minutes"
+    return f"{p.number_to_words(days_to_birthday*24*60, andword="").capitalize()} minutes"
 
 if __name__ == "__main__":
     main()
