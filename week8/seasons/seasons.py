@@ -6,7 +6,8 @@ import re
 def main():
     birthday = get_birth()
     today = date.today()
-    gap = today - birthday
+    time_to_birthday = abs(today - birthday)
+    time_to_birthday.days
 
 
 
