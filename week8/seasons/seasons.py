@@ -6,8 +6,8 @@ import re
 def main():
     birthday = get_birth()
     today = date.today()
-    time_to_birthday = abs(today - birthday)
-    time_to_birthday.days
+    days_to_birthday = abs(today - birthday).days
+    
 
 
 
