@@ -9,8 +9,7 @@ def main():
     today = date.today()
     print(calculate(birthday,today))
 
-def get_birth(birthdate):
-    birth
+def get_birth(birth):
     matches = re.search(r"^(\d{4})-(\d{2})-(\d{2})$", birth)
     if matches:
         year = int(matches.group(1))
