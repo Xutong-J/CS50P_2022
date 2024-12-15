@@ -7,9 +7,7 @@ from inflect import engine
 def main():
     birthday = get_birth()
     today = date.today()
-    days_to_birthday = abs(today - birthday).days
-    p = engine()
-    print(p.number_to_words(days_to_birthday*24*60, andword="")+ " minutes")
+    print(calculate(birthday,today))
 
 def get_birth():
     birth = input("Date of Birth: ")
@@ -23,10 +21,8 @@ def get_birth():
 
     return date(year, month, day)
 
-def calculate():
-    birthday = get_birth()
-    today = date.today()
-    days_to_birthday = abs(today - birthday).days
+def calculate(date1,date2):
+    days_to_birthday = abs(date1 - date2).days
     p = engine()
     return f"{p.number_to_words(days_to_birthday*24*60, andword="")} minutes"
 
