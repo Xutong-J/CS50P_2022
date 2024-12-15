@@ -17,9 +17,9 @@ def get_birth():
     birth = input("Date of Birth: ")
     matches = re.search(r"^(\d{4})-(\d{2})-(\d{2})$", birth)
     if matches:
-        year = matches.group(1)
-        month = matches.group(2)
-        day = matches.group(3)
+        year = int(matches.group(1))
+        month = int(matches.group(2))
+        day = int(matches.group(3))
     else:
         sys.exit()
 
