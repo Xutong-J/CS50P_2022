@@ -1,3 +1,2 @@
-from inflect import engine
-p = engine()
-print(p.number_to_words(1234, andword=""))
+from seasons import get_birth, calculate
+ assert get_birth("2024-12-14") == 
