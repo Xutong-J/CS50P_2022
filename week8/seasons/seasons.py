@@ -9,7 +9,7 @@ def main():
     today = date.today()
     days_to_birthday = abs(today - birthday).days
     p = engine()
-    print(p.number_to_words(days_to_birthday*24*60, andword=""))
+    print(p.number_to_words(days_to_birthday*24*60, andword="")+ " minutes")
 
 def get_birth():
     birth = input("Date of Birth: ")
