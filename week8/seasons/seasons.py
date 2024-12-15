@@ -1,17 +1,15 @@
 from datetime import date
 import sys
 import re
-from inflect import engine as p
+from inflect import engine
 
 
 def main():
     birthday = get_birth()
     today = date.today()
     days_to_birthday = abs(today - birthday).days
-    print(days_to_birthday * 24)
-
-
-
+    p = engine()
+    print(p.number_to_words(days_to_birthday*24, andword=""))
 
 def get_birth():
     birth = input("Date of Birth: ")
