@@ -19,7 +19,7 @@ def get_birth():
     if matches:
         year = matches.group(1)
         month = matches.group(2)
-        day = matches.grop(3)
+        day = matches.group(3)
     else:
         sys.exit()
 
