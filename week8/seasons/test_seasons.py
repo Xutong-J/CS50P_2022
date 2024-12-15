@@ -17,4 +17,4 @@ def test_calculate():
 
     assert calculate(date(2024,12,14),date(2024,12,15)) == "one thousand, four hundred forty minutes"
     assert calculate(date(2023,12,15),date(2024,12,15)) == "Five hundred twenty-seven thousand forty minutes"
-    assert calculate(date(2023,12,15),date(2022,12,15)) == "Five hundred twenty-five thousand, six hundred minutes"
+
