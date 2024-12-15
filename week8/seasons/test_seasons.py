@@ -13,7 +13,7 @@ def test_get_birth():
     with pytest.raises(SystemExit):
         get_birth("2024 12 14")
 
-def test_calculate()
+def test_calculate():
 
     assert calculate(date(2024,12,14),date(2024,12,15)) == "one thousand, four hundred forty minutes"
     assert calculate(date(2023,12,14),date(2024,12,15)) == "Five hundred twenty-seven thousand forty minutes"
