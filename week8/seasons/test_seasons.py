@@ -3,4 +3,5 @@ from datetime import date
 import pytest
 
 assert get_birth("2024-12-14") == date(2024, 12, 14)
-with pytest.raises(SystemExit)
+with pytest.raises(SystemExit) as pytest_e:
+    
