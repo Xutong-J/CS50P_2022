@@ -5,12 +5,12 @@ from inflect import engine
 
 
 def main():
-    birthday = get_birth()
+    birthday = get_birth(input("Date of Birth: "))
     today = date.today()
     print(calculate(birthday,today))
 
-def get_birth():
-    birth = input("Date of Birth: ")
+def get_birth(birthdate):
+    birth
     matches = re.search(r"^(\d{4})-(\d{2})-(\d{2})$", birth)
     if matches:
         year = int(matches.group(1))
