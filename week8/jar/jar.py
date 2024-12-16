@@ -8,7 +8,10 @@ class Jar:
         return '🍪' * self._cookies
 
     def deposit(self, n):
-        self._cookies += n
+        if not  n < 0:
+            raise ValueError("Number of cookies to deposit must be a non-negative integer.")
+        if self.cookies + n > self.capacity:
+            raise ValueError("Too much cookies!")
 
     def withdraw(self, n):
         self._cookies -= n
