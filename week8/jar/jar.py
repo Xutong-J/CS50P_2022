@@ -1,7 +1,8 @@
 class Jar:
     def __init__(self, capacity=12):
-        self._capacity = capacity
         self._cookies = 0
+        self.capacity = capacity
+
 
     def __str__(self):
         return '🍪' * self._cookies
@@ -33,7 +34,7 @@ class Jar:
         return self._cookies
 
 def main():
-    jar = Jar(-1)
+    jar = Jar(10)
     print(f"Number of cookies: {jar}")
     jar.deposit(int(input("How many cookies do you want to put?")))
     print(f"Number of cookies: {jar}")
