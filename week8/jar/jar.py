@@ -33,7 +33,7 @@ class Jar:
         return self._cookies
 
 def main():
-    jar = Jar(10)
+    jar = Jar(-1)
     print(f"Number of cookies: {jar}")
     jar.deposit(int(input("How many cookies do you want to put?")))
     print(f"Number of cookies: {jar}")
