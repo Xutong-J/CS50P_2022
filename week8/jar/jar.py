@@ -25,7 +25,7 @@ class Jar:
         self._capacity = capacity
         if self._cookies > self._capacity:
             raise ValueError("Too much cookies!")
-        if self.cookies < 0:
+        if self._cookies < 0:
             raise ValueError("No much cookies!")
 
     @property
