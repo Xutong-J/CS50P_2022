@@ -19,9 +19,8 @@ def main():
     # 添加图片
     pdf.image('shirtificate.png', x=None, y=70, w=190,keep_aspect_ratio=True)
 
-    # 添加用户名字
     pdf.set_font('Arial',size=30)
-    pdf.set_text_color(255, 255, 255)  # 白色文本
+    pdf.set_text_color(255, 255, 255)
     pdf.cell(0, 140, "Jiang Xianfu took CS50", 0, 0, 'C')
 
     # 输出PDF文件
