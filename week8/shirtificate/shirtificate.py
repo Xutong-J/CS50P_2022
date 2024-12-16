@@ -17,12 +17,12 @@ def main():
     pdf.header()
 
     # 添加图片
-    pdf.image('shirtificate.png', x=None, y=0, w=190,keep_aspect_ratio=True)
+    pdf.image('shirtificate.png', x=None, y=50, w=190,keep_aspect_ratio=True)
 
     # 添加用户名字
     pdf.set_font('Arial', 'B', 18)
     pdf.set_text_color(255, 255, 255)  # 白色文本
-    pdf.cell(0, 10, "Jiang Xianfu took CS50", 0, 0, 'C')
+    pdf.cell(0, 80, "Jiang Xianfu took CS50", 0, 0, 'C')
 
     # 输出PDF文件
     pdf.output('shirtificate.pdf')
