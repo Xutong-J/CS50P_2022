@@ -8,7 +8,7 @@ class PDF(FPDF):
 
 
 def main():
-    pdf = FPDF()
+    pdf = FPDF(orientation="P", unit="mm", format="A4")
     pdf.add_page()
     pdf.set_font("Arial", size=15)
     pdf.cell(200, 10, txt="Hello, World!", ln=True)
