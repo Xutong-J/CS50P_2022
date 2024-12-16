@@ -5,11 +5,10 @@ class Jar:
         ...
 
     def __str__(self):
-        cookies = ['🍪'] * self.num
-        return "🍪"
+        return ''.join(['🍪'] * self.num)
 
     def deposit(self, n):
-        ...
+        self.num = n
 
     def withdraw(self, n):
         ...
