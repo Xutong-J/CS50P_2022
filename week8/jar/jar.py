@@ -1,6 +1,6 @@
 class Jar:
     def __init__(self, capacity=12):
-        self.capacity = capacity
+        self._capacity = capacity
         self._cookies = 0
 
     def __str__(self):
