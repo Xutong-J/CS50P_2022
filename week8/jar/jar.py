@@ -8,12 +8,17 @@ class Jar:
         return '🍪' * self._cookies
 
     def deposit(self, n):
-        if not  n < 0:
+        if n < 0:
             raise ValueError("Number of cookies to deposit must be a non-negative integer.")
-        if self.cookies + n > self.capacity:
-            raise ValueError("Too much cookies!")
+        if self._cookies + n > self.capacity:
+            raise ValueError("Put in too much cookies!")
+        self._cookies += n
 
     def withdraw(self, n):
+        if n < 0:
+            raise ValueError("Number of cookies to withdraw must be a non-negative integer.")
+        if self._cookies - n < 0:
+            raise ValueError("No such cookies to take!")
         self._cookies -= n
 
     #Getter for capacity
@@ -27,10 +32,6 @@ class Jar:
         if capacity < 0:
             raise ValueError("Capacity Invalid!")
         self._capacity = capacity
-        if self._cookies > self._capacity:
-            raise ValueError("Too much cookies!")
-        if self._cookies < 0:
-            raise ValueError("No much cookies!")
 
     @property
     def size(self):
