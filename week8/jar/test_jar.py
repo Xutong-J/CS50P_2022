@@ -17,6 +17,7 @@ def test_str():
 
 def test_deposit():
     jar = Jar()
+    
 
 
 def test_withdraw():
