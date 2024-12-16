@@ -2,7 +2,7 @@ from jar import Jar
 import pytest
 
 def test_init():
-    with pytest.raise(ValueError):
+    with pytest.raises(ValueError):
         jar = Jar(-1)
 
 
@@ -19,7 +19,7 @@ def test_deposit():
     jar = Jar()
     jar.deposit(5)
     assert jar.size == 5
-    with pytest.raise(ValueError):
+    with pytest.raises(ValueError):
         jar.deposit(10)
 
 
@@ -30,5 +30,5 @@ def test_withdraw():
     assert jar.size == 5
     jar.withdraw(3)
     assert jar.size == 2
-    with pytest.raise(ValueError):
-        jar.with(3)
+    with pytest.raises(ValueError):
+        jar.withdraw(3)
