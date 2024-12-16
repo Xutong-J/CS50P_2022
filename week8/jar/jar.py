@@ -5,7 +5,7 @@ class Jar:
         ...
 
     def __str__(self):
-        return 
+        return "🍪"
 
     def deposit(self, n):
         ...
