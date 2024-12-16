@@ -11,7 +11,7 @@ def main():
     # 创建PDF对象
     pdf = Shirtificate()
     pdf.add_page()
-    pdf.set_font('Arial', 'B', 20)
+    pdf.set_font('Arial', size=20)
 
     # 添加标题
     pdf.header()
@@ -20,7 +20,7 @@ def main():
     pdf.image('shirtificate.png', x=None, y=50, w=190,keep_aspect_ratio=True)
 
     # 添加用户名字
-    pdf.set_font('Arial', 'B', 30)
+    pdf.set_font('Arial',size=30)
     pdf.set_text_color(255, 255, 255)  # 白色文本
     pdf.cell(0, 180, "Jiang Xianfu took CS50", 0, 0, 'C')
 
