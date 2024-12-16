@@ -23,7 +23,7 @@ class Jar:
         if capacity < 0:
             raise ValueError("Capacity Invalid!")
         self._capacity = capacity
-        if self.cookies > self._capacity:
+        if self._cookies > self._capacity:
             raise ValueError("Too much cookies!")
         if self.cookies < 0:
             raise ValueError("No much cookies!")
