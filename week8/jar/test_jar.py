@@ -1,8 +1,8 @@
 from jar import Jar
-
+import pytest
 
 def test_init():
-    ...
+    with pytest.raise()
 
 
 def test_str():
