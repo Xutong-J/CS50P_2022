@@ -17,7 +17,7 @@ def main():
     pdf.header()
 
     # 添加图片
-    pdf.image('shirtificate.png', x=None, y=0, w=190, h=280)
+    pdf.image('shirtificate.png', x=None, y=0, w=190,keep_aspect_ratio=True)
 
     # 添加用户名字
     pdf.set_font('Arial', 'B', 18)
