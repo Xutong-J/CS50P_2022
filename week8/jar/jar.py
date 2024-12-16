@@ -5,6 +5,7 @@ class Jar:
         ...
 
     def __str__(self):
+        cookies = ['🍪'] * self.num
         return "🍪"
 
     def deposit(self, n):
