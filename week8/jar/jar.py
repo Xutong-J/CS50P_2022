@@ -7,10 +7,10 @@ class Jar:
         return '🍪' * self._cookies
 
     def deposit(self, n):
-        self._cookies -= n
+        self._cookies += n
 
     def withdraw(self, n):
-        self._cookies += n
+        self._cookies -= n
 
     #Getter for capacity
     @property
