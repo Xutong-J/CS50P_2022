@@ -21,7 +21,7 @@ def main():
 
     pdf.set_font('Arial',size=30)
     pdf.set_text_color(255, 255, 255)
-    pdf.cell(0, 140, "Jiang Xianfu took CS50", 0, 0, 'C')
+    pdf.cell(0, 140, f"{input("Name: ")} took CS50", 0, 0, 'C')
 
     # 输出PDF文件
     pdf.output('shirtificate.pdf')
